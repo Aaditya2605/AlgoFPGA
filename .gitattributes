@@ -1,0 +1,38 @@
+# ------------------------------------------------------
+# Vivado Project Git Attributes
+# ------------------------------------------------------
+
+# HDL sources (force CRLF on checkout)
+*.v      text eol=crlf
+*.sv     text eol=crlf
+*.vhd    text eol=crlf
+
+# Constraints
+*.xdc    text eol=crlf
+
+# Testbenches
+*tb.v    text eol=crlf
+*tb.sv   text eol=crlf
+
+# TCL scripts
+*.tcl    text eol=crlf
+
+# Project and IP definition files (text-based XML/TCL)
+*.xpr    text eol=crlf
+*.xci    text eol=crlf
+*.bd     text eol=crlf
+
+# Memory initialization files
+*.mem    text eol=crlf
+*.coe    text eol=crlf
+
+# Documentation
+*.md     text eol=lf
+*.txt    text eol=lf
+LICENSE  text eol=lf
+
+# Ignore line endings for binary files
+*.bit    binary
+*.bin    binary
+*.dcp    binary
+*.wdb    binary

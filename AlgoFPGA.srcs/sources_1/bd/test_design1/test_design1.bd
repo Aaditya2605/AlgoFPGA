@@ -1,0 +1,69 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x732BF76D732BF76D",
+      "device": "xc7z010iclg400-1L",
+      "gen_directory": "../../../../AlgoFPGA.gen/sources_1/bd/test_design1",
+      "name": "test_design1",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2024.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "test_wrapper_0": ""
+    },
+    "ports": {
+      "led_pl": {
+        "direction": "O",
+        "left": "0",
+        "right": "0"
+      },
+      "btn_pl": {
+        "direction": "I",
+        "left": "1",
+        "right": "0"
+      }
+    },
+    "components": {
+      "test_wrapper_0": {
+        "vlnv": "xilinx.com:module_ref:test_wrapper:1.0",
+        "ip_revision": "1",
+        "xci_name": "test_design1_test_wrapper_0_0",
+        "xci_path": "ip\\test_design1_test_wrapper_0_0\\test_design1_test_wrapper_0_0.xci",
+        "inst_hier_path": "test_wrapper_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "test_wrapper",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "ta": {
+            "direction": "I"
+          },
+          "tb": {
+            "direction": "I"
+          },
+          "tc": {
+            "direction": "O"
+          }
+        }
+      }
+    },
+    "nets": {
+      "btn_pl_1": {
+        "ports": [
+          "btn_pl",
+          "test_wrapper_0/ta",
+          "test_wrapper_0/tb"
+        ]
+      },
+      "test_wrapper_0_tc": {
+        "ports": [
+          "test_wrapper_0/tc",
+          "led_pl"
+        ]
+      }
+    }
+  }
+}
